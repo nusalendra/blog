@@ -1,15 +1,14 @@
 export default function Footer() {
   return (
-    <footer className="bg-white mt-5 rounded-lg shadow dark:bg-white sm:pl-5 lg:pl-5">
+    <footer className="bg-white mt-5 rounded-lg shadow dark:bg-white sm:px-5 lg:px-5">
       <div className="w-full mx-auto max-w-screen-xl pb-8 sm:flex sm:justify-between md:items-center">
-        <div className="flex items-center">
+        <div className="flex flex-col sm:flex-row sm:items-center">
           <h2 className="font-bold sm:text-xs sm:mt-1">nusalendra.com</h2>
-          <span className="text-black dark:text-black mt-0.5 ml-3 text-sm sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-3 sm:text-xs sm:ml-2 lg:text-sm lg:w-full">
-            2024 - This application was developed using NextJS, Magic UI, and
-            Tailwindcss
+          <span className="text-black dark:text-black mt-0.5 sm:ml-3 text-sm sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 lg:text-sm">
+            2024 - This application was developed using NextJS, Magic UI, and Tailwindcss
           </span>
         </div>
-        <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-black dark:text-black sm:mt-2 sm:w-1/5 sm:justify-center">
+        <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-black dark:text-black sm:mt-2 sm:justify-center">
           <li className="flex items-center">
             <a
               href="https://www.facebook.com/alen.zzeenn/"
