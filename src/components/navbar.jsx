@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="border-gray-200 bg-transparent dark:bg-transparent dark:border-gray-700 fixed w-full top-0 left-0 z-50 mt-1.5">
+      <nav className="border-gray-200 bg-transparent dark:bg-transparent dark:border-gray-700 fixed w-full top-0 left-0 z-50">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="https://flowbite.com/"
@@ -91,6 +91,9 @@ function Navbar() {
           </div>
         </div>
       </nav>
+      <main className="pt-16">
+        {/* Konten utama di sini */}
+      </main>
     </>
   );
 }
