@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-white mt-5 rounded-lg shadow dark:bg-white sm:px-5 lg:px-5">
+    <footer className="bg-white mt-5 rounded-lg shadow dark:bg-white px-4 sm:px-6 lg:px-8">
       <div className="w-full mx-auto max-w-screen-xl pb-8 sm:flex sm:justify-between md:items-center">
         <div className="flex flex-col sm:flex-row sm:items-center">
           <h2 className="font-bold sm:text-xs sm:mt-1">nusalendra.com</h2>
