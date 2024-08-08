@@ -1,7 +1,7 @@
 function Experience() {
   return (
     <>
-      <div className="mt-28 px-72 text-start">
+      <div className="mt-28 px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32 text-start">
         <div>
           <h2 className="text-3xl font-bold text-black">Experience</h2>
           <p className="mt-2 text-justify">
