@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <div className="flex-grow sm:p-5 lg:p-5 xl:p-0">
-        <div className="mt-40 lg:flex lg:justify-center lg:items-center sm:mt-56">
+        <div className="mt-40 lg:flex lg:justify-center lg:items-center sm:mt-24">
           <div className="text-start pr-8" style={{ width: "500px" }}>
             <h2 className="font-bold text-gray-700 sm:text-lg lg:text-3xl">
               Nusalendra Putra Restu Bumi
@@ -25,12 +25,12 @@ export default function Home() {
             </div>
           </div>
           <div
-            className="relative rounded-lg overflow-hidden lg:w-1/2"
+            className="relative rounded-lg overflow-hidden w-full lg:w-1/2 lg:mt-0"
           >
             <img
               src="/logo-homepage.png"
               alt="Hero Image"
-              className="hidden w-full rounded-[inherit] border object-contain shadow-lg dark:block"
+              className="block w-full rounded-[inherit] border object-contain shadow-lg dark:block"
             />
             <BorderBeam
               size={250}
