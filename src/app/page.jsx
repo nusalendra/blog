@@ -5,12 +5,12 @@ export default function Home() {
   return (
     <>
       <div className="flex-grow sm:p-5 lg:p-5 xl:p-0">
-        <div className="mt-40 lg:flex lg:justify-center lg:items-center sm:mt-24 px-4 sm:px-6 lg:px-8">
+        <div className="mt-20 lg:flex lg:justify-center lg:items-center sm:mt-12 px-4 sm:px-6 lg:px-8">
           <div className="text-start pr-8 mb-8" style={{ width: "100%", maxWidth: "500px" }}>
             <h2 className="font-bold text-gray-700 sm:text-lg lg:text-3xl">
               Nusalendra Putra Restu Bumi
             </h2>
-            <div className="mt-4 sm:mt-0 mb-4" style={{ height: "50px", overflow: "hidden" }}>
+            <div className="mt-4 sm:mt-2 mb-4" style={{ height: "50px", overflow: "hidden" }}>
               <WordRotate
                 key="word-rotate"
                 className="font-normal sm:text-sm lg:text-lg"
