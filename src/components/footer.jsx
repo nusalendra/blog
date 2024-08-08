@@ -1,11 +1,11 @@
 export default function Footer() {
   return (
     <>
-      <footer className="bg-white rounded-lg shadow dark:bg-white">
+      <footer className="bg-white mt-5 rounded-lg shadow dark:bg-white sm:pl-5 lg:pl-5">
         <div className="w-full mx-auto max-w-screen-xl pb-8 sm:flex sm:justify-between md:flex md:items-center md:justify-between">
           <div className="flex items-center">
             <h2 className="font-bold sm:text-xs sm:mt-1">nusalendra.com</h2>
-            <span className="text-black dark:text-black mt-0.5 ml-3 text-sm sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 sm:text-start sm:text-xs  sm:ml-2 lg:text-sm lg:w-full">
+            <span className="text-black dark:text-black mt-0.5 ml-3 text-sm sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-3 sm:text-start sm:text-xs sm:ml-2 lg:text-sm lg:w-full">
               2024 - This application was developed using NextJS, Magic UI, and
               Tailwindcss
             </span>
