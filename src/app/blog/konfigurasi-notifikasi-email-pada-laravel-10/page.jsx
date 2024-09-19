@@ -115,7 +115,7 @@ export default function KonfigurasiEmailNotificationPadaLaravel10() {
               <strong>php artisan serve :</strong> Bagian ini berfungsi untuk
               menjalankan server lokal bawaan Laravel, yang memungkinkan kamu
               mengakses aplikasi Laravel melalui browser. Jika di terminal atau
-              cmd muncul pesan "Server running on [http://127.0.0.1:8000]", maka
+              cmd muncul pesan &quot;Server running on [http://127.0.0.1:8000]&quot;, maka
               aplikasi Laravel siap digunakan. Laravel dijalankan melalui port
               8000, dan kamu bisa membukanya di browser dengan mengunjungi{" "}
               <a
@@ -132,7 +132,7 @@ export default function KonfigurasiEmailNotificationPadaLaravel10() {
           </h1>
           <img
             src="/konfigurasi-email-pada-laravel-10/verifikasi-2-langkah.png"
-            alt=""
+            alt="verifikasi-2-langkah"
             className="mt-2"
           />
           <p className="mt-2 font-light text-md">
@@ -155,7 +155,7 @@ export default function KonfigurasiEmailNotificationPadaLaravel10() {
               <li>
                 2. Masuk ke menu <strong>Keamanan</strong> (Security) di
                 pengaturan akun, atau kamu juga bisa mencarinya dengan mengetik
-                "Verifikasi 2 Langkah" di kolom pencarian.
+                &quot;Verifikasi 2 Langkah&quot; di kolom pencarian.
               </li>
               <li>
                 3. Aktifkan <strong>Verifikasi Dua Langkah</strong> (2-Step
@@ -191,8 +191,8 @@ export default function KonfigurasiEmailNotificationPadaLaravel10() {
               MAIL_USERNAME=null{"\n"}
               MAIL_PASSWORD=null{"\n"}
               MAIL_ENCRYPTION=null{"\n"}
-              MAIL_FROM_ADDRESS="hello@example.com"{"\n"}
-              MAIL_FROM_NAME="${`APP_NAME`}"
+              MAIL_FROM_ADDRESS=&quot;hello@example.com&quot;{"\n"}
+              MAIL_FROM_NAME=&quot;${`APP_NAME`}&quot;
             </pre>
             <button
               className="absolute top-2 right-2 bg-blue-600 text-white py-1 px-2 rounded hover:bg-blue-500 transition text-xs"
@@ -214,8 +214,8 @@ export default function KonfigurasiEmailNotificationPadaLaravel10() {
               MAIL_USERNAME=emailpengirim@gmail.com{"\n"}
               MAIL_PASSWORD=passwordpengirim{"\n"}
               MAIL_ENCRYPTION=tls{"\n"}
-              MAIL_FROM_ADDRESS="emailpengirim@gmail.com"{"\n"}
-              MAIL_FROM_NAME="${`APP_NAME`}"
+              MAIL_FROM_ADDRESS=&quot;emailpengirim@gmail.com&quot;{"\n"}
+              MAIL_FROM_NAME=&quot;${`APP_NAME`}&quot;
             </pre>
             <button
               className="absolute top-2 right-2 bg-blue-600 text-white py-1 px-2 rounded hover:bg-blue-500 transition text-xs"
@@ -235,8 +235,8 @@ export default function KonfigurasiEmailNotificationPadaLaravel10() {
               <strong className="font-semibold">MAIL_FROM_ADDRESS</strong>{" "}
               dengan email kamu, serta{" "}
               <strong className="font-semibold">MAIL_PASSWORD</strong> dengan
-              dengan App Password atau Sandi Aplikasi yang sudah dibuat
-              sebelumnya. Ingat, jangan ada spasi di MAIL_PASSWORD ya!
+              App Password atau Sandi Aplikasi yang sudah dibuat sebelumnya.
+              Ingat, jangan ada spasi di MAIL_PASSWORD ya!
             </p>
           </div>
           <h1 className="font-bold text-xl mt-5">Membuat Kelas Notifikasi</h1>
@@ -292,13 +292,13 @@ class KirimNotifikasi extends Notification
     }
 
     /**
-     * Get the notification's delivery channels.
+     * Get the notification&#39;s delivery channels.
      *
-     * @return array<int, string>
+     * @return array&lt;int, string&gt;
      */
     public function via(object $notifiable): array
     {
-        return ['mail'];
+        return [&quot;mail&quot;];
     }
 
     /**
@@ -307,16 +307,16 @@ class KirimNotifikasi extends Notification
     public function toMail(object $notifiable): MailMessage
     {
         return (new MailMessage)
-            ->subject('Email Notification Testing')
-            ->view('kirim-notifikasi', [
-                'data' => $this->data
+            -&gt;subject(&quot;Email Notification Testing&quot;)
+            -&gt;view(&#39;kirim-notifikasi&#39;, [
+                &#39;data&#39; =&gt; $this-&gt;data
             ]);
     }
 
     /**
      * Get the array representation of the notification.
      *
-     * @return array<string, mixed>
+     * @return array&lt;string, mixed&gt;
      */
     public function toArray(object $notifiable): array
     {
@@ -352,13 +352,13 @@ class KirimNotifikasi extends Notification
     }
 
     /**
-     * Get the notification's delivery channels.
+     * Get the notification&#39;s delivery channels.
      *
-     * @return array<int, string>
+     * @return array&lt;int, string&gt;
      */
     public function via(object $notifiable): array
     {
-        return ['mail'];
+        return [&quot;mail&quot;];
     }
 
     /**
@@ -367,16 +367,16 @@ class KirimNotifikasi extends Notification
     public function toMail(object $notifiable): MailMessage
     {
         return (new MailMessage)
-            ->subject('Email Notification Testing')
-            ->view('kirim-notifikasi', [
-                'data' => $this->data
+            -&gt;subject(&quot;Email Notification Testing&quot;)
+            -&gt;view(&#39;kirim-notifikasi&#39;, [
+                &#39;data&#39; =&gt; $this-&gt;data
             ]);
     }
 
     /**
      * Get the array representation of the notification.
      *
-     * @return array<string, mixed>
+     * @return array&lt;string, mixed&gt;
      */
     public function toArray(object $notifiable): array
     {
@@ -419,7 +419,7 @@ class KirimNotifikasi extends Notification
             yang akan digunakan di dalam method <code>toMail()</code>. View ini
             berfungsi sebagai template yang memuat data notifikasi yang akan
             dikirim. Pada kode di atas, kita menggunakan view{" "}
-            <code>'kirim-notifikasi'</code> dan mengirimkan data ke dalamnya.
+            <code>&#39;kirim-notifikasi&#39;</code> dan mengirimkan data ke dalamnya.
             Sekarang, buat file <code>kirim-notifikasi.blade.php</code> di
             folder <code>resources/views</code> dan sesuaikan isinya sesuai
             dengan kebutuhan notifikasi Anda. Masukkan kode berikut ke dalam
@@ -551,10 +551,10 @@ class UserController extends Controller
             notifikasi (email yang digunakan harus aktif).
           </p>
           <p className="text-md mb-2">
-            <strong>Notification::route('mail', $data['email']) :</strong>{" "}
+            <strong>Notification::route(&#39;mail&#39;, $data[&#39;email&#39;]) :</strong>{" "}
             Metode ini digunakan untuk menentukan rute notifikasi melalui
             channel email, dengan alamat tujuan yang diambil dari{" "}
-            <code>$data['email']</code>. Dengan cara ini, kamu bisa mengirimkan
+            <code>$data[&#39;email&#39;]</code>. Dengan cara ini, kamu bisa mengirimkan
             notifikasi langsung ke alamat email yang ditentukan tanpa memerlukan
             model User.
           </p>
@@ -572,8 +572,8 @@ class UserController extends Controller
         </p>
         <div className="relative mt-5 mb-5">
           <pre className="bg-gray-900 text-white p-4 rounded-lg font-mono overflow-x-auto text-xs">
-            Route::get('/kirim-notifikasi', [UserController::class,
-            'kirimNotifikasi']);
+            Route::get(&#39;/kirim-notifikasi&#39;, [UserController::class,
+            &#39;kirimNotifikasi&#39;]);
           </pre>
           <button
             className="absolute top-2 right-2 bg-blue-600 text-white py-1 px-2 rounded hover:bg-blue-500 transition text-xs"
@@ -603,7 +603,7 @@ class UserController extends Controller
         <div className="flex justify-center mt-4">
           <img
             src="/konfigurasi-email-pada-laravel-10/request-berhasil.png"
-            alt=""
+            alt="request-berhasil"
             className="w-full max-w-screen-md"
           />
         </div>
@@ -613,7 +613,7 @@ class UserController extends Controller
         </p>
         <img
           src="/konfigurasi-email-pada-laravel-10/notifikasi-email.png"
-          alt=""
+          alt="notifikasi-email"
           className="mt-2 w-full max-w-screen-md"
         />
         <h1 className="font-bold text-xl mt-5">Kesimpulan</h1>
